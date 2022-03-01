@@ -39,7 +39,7 @@ const App = () => {
 
   const filteredPersons = !searchName
     ? persons  
-    : persons.filter(person => person.name.toLowerCase().includes(searchName.toLocaleLowerCase()))
+    : persons.filter(person => person.name.toLowerCase().includes(searchName.toLowerCase()))
 
   return (
     <div>
